@@ -3,111 +3,275 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Data Engineer</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-        }
-        header {
-            background: #0f172a;
-            color: #fff;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        section {
-            padding: 40px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-        h2 {
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 10px;
-        }
-        .projects div {
-            background: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-        }
-        footer {
-            background: #0f172a;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-        a {
-            color: #2563eb;
-            text-decoration: none;
-        }
-    </style>
+    <title>Panagiotis Koniordos | Data Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <div class="background-pattern"></div>
 
-<header>
-    <h1>Your Name</h1>
-    <p>Data Engineer | Python | SQL | Cloud</p>
+<header class="hero">
+    <div class="hero-content">
+        <div class="hero-avatar">
+            <div class="avatar-circle">
+                <i class="fas fa-user-tie"></i>
+            </div>
+        </div>
+        <h1 class="hero-name">Panagiotis Koniordos</h1>
+        <p class="hero-title">Junior Data Engineer</p>
+        <div class="hero-tags">
+            <span class="tag">Azure</span>
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+            <span class="tag">MLOps</span>
+        </div>
+        <div class="hero-links">
+            <a href="mailto:panoskonior@gmail.com" class="link-btn">
+                <i class="fas fa-envelope"></i>
+                <span>Email</span>
+            </a>
+            <a href="https://www.linkedin.com/in/panagiotis-koniordos-3b6153212/" target="_blank" class="link-btn">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/goshawk15" target="_blank" class="link-btn">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+    </div>
 </header>
 
-<section>
-    <h2>About Me</h2>
-    <p>
-        I am a Data Engineer passionate about building scalable data pipelines,
-        data warehouses, and cloud-based analytics solutions.
-    </p>
-</section>
+<main class="main-content">
 
-<section>
-    <h2>Skills</h2>
-    <ul>
-        <li>Python, SQL</li>
-        <li>ETL / ELT Pipelines</li>
-        <li>Airflow, Spark</li>
-        <li>AWS / GCP / Azure</li>
-        <li>Data Warehousing</li>
-    </ul>
-</section>
-
-<section class="projects">
-    <h2>Projects</h2>
-
-    <div>
-        <h3>ETL Pipeline with Airflow</h3>
-        <p>
-            Built an automated ETL pipeline that extracts data from a public API,
-            transforms it using Python, and loads it into a data warehouse.
-        </p>
-        <p><strong>Tech:</strong> Python, Airflow, PostgreSQL</p>
-        <a href="#">View on GitHub</a>
+<section class="about-section">
+    <div class="container">
+        <div class="section-header">
+            <h2><i class="fas fa-user"></i> About Me</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="about-content">
+            <p class="about-text">
+                Junior Data Engineer with hands-on experience designing and maintaining
+                scalable data pipelines, analytical data warehouses, and MLOps workflows
+                in cloud environments. Strong background in Python, SQL, and Azure data services,
+                with experience in banking and healthcare domains.
+            </p>
+        </div>
     </div>
+</section>
 
-    <div>
-        <h3>Streaming Data Pipeline</h3>
-        <p>
-            Designed a real-time data pipeline for processing streaming events.
-        </p>
-        <p><strong>Tech:</strong> Kafka, Spark, AWS S3</p>
-        <a href="#">View on GitHub</a>
+<section class="experience-section">
+    <div class="container">
+        <div class="section-header">
+            <h2><i class="fas fa-briefcase"></i> Industry Experience</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="experience-card">
+                    <div class="card-header">
+                        <h3>Satori Analytics — Junior Data Engineer</h3>
+                        <span class="date-badge">March 2025 – Present</span>
+                    </div>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Athens, Greece</p>
+                    <p class="client"><strong>Client:</strong> Leading Banking Institution</p>
+                    <ul class="achievement-list">
+                        <li><i class="fas fa-check-circle"></i>Designed and implemented scalable data ingestion pipelines using Azure Data Factory and Azure Data Lake.</li>
+                        <li><i class="fas fa-check-circle"></i>Built data validation and monitoring frameworks with schema checks and automated alerts.</li>
+                        <li><i class="fas fa-check-circle"></i>Migrated legacy SQL-based ETL processes to modular Python-based feature engineering.</li>
+                        <li><i class="fas fa-check-circle"></i>Integrated Azure Data Factory with Azure ML to orchestrate automated ML model execution.</li>
+                        <li><i class="fas fa-check-circle"></i>Contributed to an Analytical Data Warehouse (ADWH) supporting financial and regulatory reporting.</li>
+                        <li><i class="fas fa-check-circle"></i>Worked with SQL, stored procedures, Databricks, and Python for data transformation and optimization.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="experience-card">
+                    <div class="card-header">
+                        <h3>Robert Koch Institute — Trainee Data Modeler</h3>
+                        <span class="date-badge">Sep 2024 – Dec 2024</span>
+                    </div>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Berlin, Germany</p>
+                    <ul class="achievement-list">
+                        <li><i class="fas fa-check-circle"></i>Developed and validated FHIR profiles and JSON resources for medical data standardization.</li>
+                        <li><i class="fas fa-check-circle"></i>Used FHIR Shorthand (FSH) to define reusable healthcare data models.</li>
+                        <li><i class="fas fa-check-circle"></i>Automated API data retrieval and validation using Python.</li>
+                        <li><i class="fas fa-check-circle"></i>Collaborated in GitHub-based workflows and documented technical changes.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-
 </section>
 
-<section>
-    <h2>Contact</h2>
-    <p>
-        Email: your.email@example.com<br>
-        GitHub: <a href="https://github.com/yourusername">yourusername</a><br>
-        LinkedIn: <a href="#">Your LinkedIn</a>
-    </p>
+<section class="projects-section">
+    <div class="container">
+        <div class="section-header">
+            <h2><i class="fas fa-rocket"></i> Projects</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-header">
+                <h3><i class="fas fa-chart-line"></i> Grestats — Statistical Data ETL & Visualization Platform</h3>
+                <a href="https://grestats-aegkgseggda8encs.germanywestcentral-01.azurewebsites.net/" target="_blank" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>Live Project</span>
+                </a>
+            </div>
+            <ul class="project-features">
+                <li><i class="fas fa-cogs"></i>Designed an automated ETL pipeline to ingest and process Eurostat data using Python.</li>
+                <li><i class="fas fa-database"></i>Stored curated datasets in Azure SQL Database.</li>
+                <li><i class="fas fa-server"></i>Built a Django REST API to serve processed data.</li>
+                <li><i class="fas fa-desktop"></i>Developed a React-based frontend for interactive data visualization.</li>
+                <li><i class="fas fa-cloud"></i>Deployed the platform on Azure App Service.</li>
+            </ul>
+            <div class="tech-stack">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Django</span>
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">Azure SQL</span>
+                <span class="tech-badge">Azure App Service</span>
+            </div>
+        </div>
+    </div>
 </section>
 
-<footer>
-    <p>© 2026 Your Name</p>
+<section class="skills-section">
+    <div class="container">
+        <div class="section-header">
+            <h2><i class="fas fa-code"></i> Technical Skills</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4><i class="fas fa-laptop-code"></i> Programming</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Java</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4><i class="fas fa-cloud"></i> Cloud & Data</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Azure Data Factory</span>
+                    <span class="skill-tag">Azure Data Lake</span>
+                    <span class="skill-tag">Azure Databricks</span>
+                    <span class="skill-tag">Azure ML</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4><i class="fas fa-database"></i> Databases</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">SQL Server</span>
+                    <span class="skill-tag">Azure SQL</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4><i class="fas fa-tools"></i> Libraries & Tools</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Pandas</span>
+                    <span class="skill-tag">NumPy</span>
+                    <span class="skill-tag">PySpark</span>
+                    <span class="skill-tag">Polars</span>
+                    <span class="skill-tag">Pandera</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4><i class="fas fa-sitemap"></i> Methodologies</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">ETL / ELT Pipelines</span>
+                    <span class="skill-tag">Data Warehousing</span>
+                    <span class="skill-tag">MLOps</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="education-section">
+    <div class="container">
+        <div class="section-header">
+            <h2><i class="fas fa-graduation-cap"></i> Education & Certifications</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="education-grid">
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div class="education-content">
+                    <h4>BSc in Informatics (Data Science)</h4>
+                    <p>Athens University of Economics and Business</p>
+                </div>
+            </div>
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="education-content">
+                    <h4>Microsoft Certified: Azure Data Fundamentals</h4>
+                    <p>Microsoft Azure Certification</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <p>© 2026 Panagiotis Koniordos</p>
+            <p class="footer-subtitle">Built with passion for data engineering</p>
+        </div>
+    </div>
 </footer>
+
+<script>
+// Smooth scrolling for scroll indicator
+document.querySelector('.scroll-indicator').addEventListener('click', function() {
+    document.querySelector('.about-section').scrollIntoView({ 
+        behavior: 'smooth' 
+    });
+});
+
+// Add scroll animations
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, observerOptions);
+
+// Observe all sections for animations
+document.querySelectorAll('section').forEach(section => {
+    section.style.opacity = '0';
+    section.style.transform = 'translateY(30px)';
+    section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(section);
+});
+</script>
 
 </body>
 </html>
-
